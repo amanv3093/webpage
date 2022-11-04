@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Merriweather:wght@700&family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+            background-color: rgb(4, 27, 43);
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: rgb(255, 90, 0);
+            font-weight: 600;
+            font-size: 2.4rem;
+            padding: 10px 20px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: rgb(243, 224, 224);
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: white;
+            transition: .4s;
+        }
+
+        section {
+            display: flex;
+
+            align-items: center;
+            padding: 70px 17%;
+            justify-content: space-between;
+            font-family: 'Merriweather', serif;
+        }
+
+        .text {
+            font-weight: 500;
+            font-size: 1rem;
+
+            color: white;
+
+            padding: 0 1px;
+
+        }
+
+        .img {
+            text-align: center;
+            padding: 0 1px;
+
+
+
+        }
+
+        .tcolor {
+            color: rgb(255, 90, 0);
+            font-size: 49px;
+            font-weight: ;
+        }
+
+        .ttcolor {
+            font-size: 20px;
+        }
+
+        .tmenu {
+            font-size: 15px;
+            color: white;
+        }
+
+        .btn {
+            background: rgb(255, 90, 0);
+            display: inline-block;
+            border-radius: 0.5rem;
+            padding: 3px 6px;
+            border: rgb(255, 90, 0);
+            margin: 10px 1px;
+            color: white;
+
+        }
+
+        .btn:hover {
+            color: white;
+            transition: 0.3s;
+
+        }
+
+
+
+        .about {
+            display: flex;
+
+            align-items: center;
+            padding: 70px 15%;
+            color: white;
+            font-family: 'Merriweather', serif;
+
+        }
+
+        .tcolor2 {
+            color: rgb(255, 90, 0);
+            font-family: 'Merriweather', serif;
+        }
+
+        .txt2 {
+            color: white;
+            font-family: 'Merriweather', serif;
+        }
+
+        .txt3 {
+            font-size: 26px;
+            color: palevioletred;
+        }
+
+        .txt4 {
+            font-size: 13px;
+
+        }
+
+       .btn a{
+        color: white;
+       }
+
+        .heading {
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .d1 {
+            color: rgb(255, 90, 0);
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+
+        }
+
+        span {
+            color: rgb(255, 90, 0);
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+        }
+
+        .box1 {
+            color: black;
+            background: cornsilk;
+            border: solid black;
+
+
+        }
+
+        .box2 {
+            color: black;
+            background: cornsilk;
+            border: solid black;
+
+        }
+
+        .box3 {
+            color: black;
+            background: cornsilk;
+            border: solid black;
+
+        }
+
+        .servicecont {
+            padding: 100px 0px 66px 0px;
+            text-align: center;
+            color: white;
+        }
+
+        .d2 {
+            color: rgb(255, 90, 0);
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+
+        }
+
+        .cont {
+
+            text-align: center;
+            color: white;
+            display: flex;
+            font-family: 'Merriweather', serif;
+            font-size: 14px;
+            text-align: center;
+            justify-content: center;
+            padding: 12px;
+        }
+
+        .cont1 {
+            padding: 1px 2px;
+        }
+
+        .cont2 {
+            padding: 1px 90px;
+        }
+
+        .cont3 {
+            padding: 20px 1px;
+        }
+
+
+        .foot {
+           margin: 110px auto;
+     width: 893px;
+     height: 203px;
+
+
+            background: #feeee7;
+            display: flex;
+          align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+        }
+        .foot1{
+            padding: 0 25px;
+            color: rgb(7, 7, 7);
+            font-family: 'Merriweather', serif;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        
+        .col{
+            display: flex;
+           align-content: center;
+           justify-content: center;
+           flex-wrap: wrap;
+        }
+        .last{
+            padding: 10px 0;
+            width: 100%;
+        }
+        .last1{
+            width: 25%;
+        }
+        .l1{
+
+        }
+       
+        .last1 h3{
+color: white;
+margin-bottom: 25px;
+position: relative;
+font-family: 'Merriweather', serif;
+        }
+
+        .last1 h3::before{
+            content: "";
+            position: absolute;
+
+            height: 2px;
+            width: 50px;
+            left: 0;
+            bottom: -8px;
+            background:  rgb(255, 90, 0);
+        }
+
+.last1 ul li a{
+    color: white;
+    display: block;
+    font-size: 1.1rem;
+    transition: .4s;
+}
+.last1 ul li a:hover{
+    color: rgb(247, 241, 241);
+    transform: translateX(-12px);
+    font-family: 'Merriweather', serif;
+
+}
+     @media(max-width:1560px ){
+header{
+    padding: 15px 40px;
+}
+:root{
+    --big-font:3.5rem;
+    --h2-font:3.5rem;
+}
+
+@media(max-width:1148px )
+section:{
+    padding: 50px 8%;
+}
+menu-icon{
+    display: initial;
+    color: white;
+}
+     }   
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Food</a>
+        <div class="box" id="menu-icon"></div>
+
+
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+
+    <section>
+        <div class="text">
+            <h1 class="tcolor">Full website
+                <h1 />
+                <h1 class="ttcolor"> <br>Food the <br>Most precious things
+                    <br> <button class="btn"> <a href="#" class="tmenu">Today's menu</a> </button>
+                </h1>
+        </div>
+
+        <div class="img">
+            <img src="http://drive.google.com/uc?export=view&id=1oxYgdAwhlAgEfRhR9Nvn81Bxk5kdJRq5" alt="" width="600px">
+
+            
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <div class="img2">
+            
+            <img src="http://drive.google.com/uc?export=view&id=1Hyrjxv-qU6tn0MY75tSB1MwCHtvRGr5Q"width="400px">
+          
+        </div>
+
+        <div class="txt2">
+            <h1 class="tcolor2">About us</h1> <br>
+            <h1 class="txt3">We speak the good <br>Food language</h1>
+            <h1 class="txt4">there are many variation passages of lorem ipsum available,but the <br>majority
+                have suffered alteration in form,by injected humour randomised <br>
+                words which don't look even slightly believable <br>
+                <button class="btn"> <a href="">Today's menu </a> </button>
+            </h1>
+        </div>
+    </section>
+
+
+    <div class="heading">
+
+        <center>
+            <p class="d1">Food menu</p>
+            <h1>Fresh taste and best price</h1>
+        </center>
+    </div>
+
+
+
+    <div class="box">
+        <div class="box1">
+            
+
+            <img src="http://drive.google.com/uc?export=view&id=1hrUnb9Pz233eI-2MWJI2XxpVW1yDM3Ek" width="244px" height="186px">
+            <center>
+                <h2>Chicken burger</h2>
+                <h3>Tasty food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart'></i>
+            </center>
+        </div>
+        <div class="box2">
+          
+            <img src="http://drive.google.com/uc?export=view&id=1yRD_D9CegXHlFmxVpd8JK17E_87uMfAN" width="244px" height="186px">
+            <center>
+                <h2>Donut</h2>
+                <h3>Tasty food</h3>
+                <span>$5.00</span>
+                <i class='bx bx-cart'></i>
+            </center>
+
+
+        </div>
+
+
+        <div class="box3">
+            
+            <img src="http://drive.google.com/uc?export=view&id=1X7-h7sk0I-EBjaqnBelccc1r60ilsZIR" width="244px"
+                height="186px">
+            <center>
+                <h2>Chicken Fry Pack</h2>
+                <h3>Tasty food</h3>
+                <span>$25.00</span>
+                <i class='bx bx-cart-alt'></i>
+
+            </center>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="servicecont">
+
+        <p class="d2">Services</p>
+        <h2>We provide best quality food</h2>
+
+    </div>
+
+    <div class="cont">
+
+        <div class="cont1">
+           
+            <img src="http://drive.google.com/uc?export=view&id=1ROo5jp2tHxGddEOefFH7kAfLppDpQrsm" width="50px">
+            <p class="d2">Order</p>
+
+            <p>There are many variation of passage of <br>
+                lorem ipsum avilable but majority have <br>
+                suffered alteration injected humour</p>
+        </div>
+
+        <div class="cont2">
+           
+            <img src="http://drive.google.com/uc?export=view&id=1-wOfxB9Xc20EpeWg1SHAMdpxy0bCyYrY" width="50px">
+            <p class="d2">Shipping</p>
+
+            <p>There are many variation of passage of <br>
+                lorem ipsum avilable but majority have <br>
+                suffered alteration injected humour</p>
+        </div>
+
+        <div class="cont3">
+        
+            <img src="http://drive.google.com/uc?export=view&id=1g0lzDDnUR7gbhvCIYHeiBeGFJ1ee3Zx7" width="50px">
+            <p class="d2">Delivered</p>
+
+            <p>There are many variation of passage of <br>
+                lorem ipsum avilable but majority have <br>
+                suffered alteration injected humour</p>
+        </div>
+
+    </div>
+
+
+    <div class="foot">
+
+       
+        <div class="foot1">
+            <p>We make quality food <br><center>Everyday</p>
+            <button class="btn"><a href="#">Let's talk</a>  </button></center> 
+
+        </div>
+    </div>
+
+<section class="contact">
+<div class="last">
+    <div class="col">
+
+    <div class="last1">
+        <h3>Menu link</h1>
+        <ul class="l1">
+         
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+
+              
+        </ul>
+    </div>
+
+    <div class="last1">
+        <h3>Our service</h3>
+            <ul class="l1">
+         
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Project management</a></li>
+            <li><a href="#">Graphic design</a></li>
+
+              
+        </ul>
+    </div>
+
+    <div class="last1">
+        <h3>Information</h3>
+            <ul class="l1">
+         
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery information</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms & condition</a></li>
+            
+
+              
+        </ul>
+    </div>
+
+    <div class="last1">
+        <h3>Contact Us</h3>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+    </div>
+
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+
+</html>
